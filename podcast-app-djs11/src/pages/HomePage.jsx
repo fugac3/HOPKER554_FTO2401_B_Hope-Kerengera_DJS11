@@ -5,9 +5,10 @@ export default function HomePage() {
 
     return (
         <>
-            <div>
+            <div className="banner-section">
+                <div className="banner-overlay">
                 <h3>Search Bar</h3>
-                <img></img>
+                </div>
             </div>
             <main>
                 <h1>Shows</h1>

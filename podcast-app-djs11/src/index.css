@@ -7,12 +7,17 @@
 :root {
   --primary-color: #E6E6FA;
   --complementary-color: #383f51;
-  --secondary-color: #d1cf9b;
+  --secondary-color: #dbd9a8;
+  --darker-primary: #937193;
   --font-family: Arial, sans-serif;
 }
 
 body {
   font-family: var(--font-family);
+}
+
+.contentAreaApp {
+  padding-left: 20px;
 }
 
 /*///////////////////////////////// HEADER STYLES /////////////////////////////*/
@@ -24,6 +29,9 @@ header {
   padding: 10px 20px;
   background-color: var(--primary-color);
   color: var(--complementary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header-left {
@@ -34,6 +42,7 @@ header {
 .logo {
   height: 40px;
   margin-right: 15px;
+  /* space between logo and title*/
 }
 
 .app-name {
@@ -46,7 +55,6 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 20px;
 }
 
 .nav li {
@@ -78,4 +86,70 @@ footer {
 footer p {
   margin: 0;
   font-size: 16px;
+}
+
+/*///////////////////////////////// SHOW DETAIL STYLES /////////////////////////////*/
+
+.show-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* allow items to wrap to the next line if they don't fit */
+  gap: 1rem;
+}
+
+.show-item {
+  width: calc(20% - 1rem);
+  /* 1rem is the gap between items (16px) */
+  border: 1px solid var(--complementary-color);
+  padding: 1rem;
+  text-align: center;
+  /* box-shadow: #383f51a7 0 0 3px; */
+  box-shadow: 3px 3px 5px rgba(155, 155, 155, 0.5);
+  /* adds a shadow on the bottom and right */
+  border-radius: 2px;
+}
+
+.show-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.show-item h3 {
+  margin: 0.5rem 0;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.genreNames {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--darker-primary);
+  font-weight: 500;
+}
+
+.banner-section {
+  background-image: url(images/homepage_backdrop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 2vh;
+  margin-right: 20px;
+  border-radius: 10px;
+  filter: brightness(1.3)
+    /* Make the image lighter */
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(241, 119, 241, 0.3);
+  ;
+  pointer-events: none;
 }

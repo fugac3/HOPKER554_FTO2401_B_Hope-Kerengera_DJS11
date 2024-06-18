@@ -12,10 +12,12 @@ export default function App() {
     return (
         <BrowserRouter>
             <Header />
+            <main className='contentAreaApp'>
             <Routes>
                 <Route path='/' element={<HomePage />} />
 
             </Routes>
+            </main>
             <Footer />
         </BrowserRouter>
     )
