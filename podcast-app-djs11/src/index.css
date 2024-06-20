@@ -175,9 +175,15 @@ footer p {
 }
 
 /*///////////////////////////////// SHOW PAGE STYLES /////////////////////////////*/
+.show-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .show-page {
   padding: 2rem;
-  max-width: 90vw;
+  max-width: 95vw;
   max-height: 75vh;
   margin: 0 auto;
   background-color: #fbfbff;
@@ -185,7 +191,6 @@ footer p {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-
 }
 
 .show-title {
@@ -210,13 +215,45 @@ footer p {
   margin-bottom: 1rem;
 }
 
-.show-genres {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
 .show-seasons {
   font-size: 1rem;
+  color: #333;
+}
+
+.seasons-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.season-card {
+  padding: 1rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  background-color: #fbfbff;
+  border-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.season-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.season-image {
+  display: block;
+  max-width: 6vw;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.season-episodes {
+  font-size: 0.8rem;
   color: #333;
 }
