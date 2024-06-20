@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ShowPage from './pages/ShowPage';
+import GenresPage from './pages/GenresPage';
 
 
 
@@ -18,6 +19,7 @@ export default function App() {
                 <Route path='/' element={<HomePage />} />
                 <Route path='/show/:id' element={<ShowPage />} />
                  {/*path to different shows. write /show/ then id is the id of the show*/}
+                <Route path='/genres' element={<GenresPage />} />
             </Routes>
             </main>
             <Footer />

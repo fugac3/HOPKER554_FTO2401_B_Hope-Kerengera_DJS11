@@ -5,12 +5,12 @@
 }
 
 :root {
-  --primary-color: #E6E6FA;
+  --primary-color: #e6e6fA;
   --complementary-color: #383f51;
   --secondary-color: #eae8be;
   --darker-primary: #937193;
   --darker-complementary: #bbb986;
-  --darker-darker-complementary: #8E8A61;
+  --darker-darker-complementary: #8e8a61;
   --font-family: Arial, sans-serif;
 }
 
@@ -110,7 +110,7 @@ footer p {
   /* box-shadow: #383f51a7 0 0 3px; */
   box-shadow: 3px 3px 5px rgba(155, 155, 155, 0.5);
   /* adds a shadow on the bottom and right */
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .show-item img {
@@ -173,6 +173,25 @@ footer p {
   font-size: 1rem;
   border: var(--darker-complementary) 3px solid;
   border-radius: 30px;
+}
+
+/*Sorting*/
+
+.sort-options {
+  margin-top: 1rem;
+}
+
+.sort-label {
+  margin-right: 0.5rem;
+  color: #6c6949;
+  font-weight: bold;
+}
+
+.sort-order {
+  color: var(--darker-darker-complementary);
+  border: #8E8A61 1px solid;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /*///////////////////////////////// SHOW PAGE STYLES /////////////////////////////*/
@@ -296,43 +315,38 @@ audio {
   height: 40px;
 }
 
-/* ///////////////////////////////// SEASON PAGE STYLES /////////////////////////////
-.season-page {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/*///////////////////////////////// GENRE PAGE STYLES /////////////////////////////*/
+.genres-page {
+  margin: 2vh 2vw;
+  color: #383f51;
 }
 
-.season-page-heading {
+.genres-title {
   font-size: 2rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 1rem;
+  color: #937193;
+  font-weight: bold;
 }
 
-.season-page-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto 1rem auto;
+.genre-select-container {
+  margin-bottom: 2rem;
 }
 
-.episodes-list {
-  list-style: none;
-  padding: 0;
+.genre-label {
+  margin-right: 1rem;
 }
 
-.episode {
+.genre-select {
+  padding: 0.5rem;
   font-size: 1rem;
-  color: #666;
-  margin-bottom: 0.5rem;
+  border: 1px solid #8e8a61;
+  border-radius: 5px;
+  color: #383f51;
+  background-color: #eae8be;
+}
 
-  &:hover {
-    color: #007bff;
-    cursor: pointer;
-  }
-} */
+.selected-genre-heading {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--complementary-color);
+  font-weight: bold;
+}
