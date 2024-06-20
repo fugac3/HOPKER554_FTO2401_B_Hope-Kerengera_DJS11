@@ -7,7 +7,7 @@ export default function Header() {
             <header>
                 <div className='header-left'>
                     <img src={microphone} alt='App Logo' className='logo' />
-                    <span className='app-name'>Podcast App</span>
+                    <span className='app-name'>Podpal</span>
                 </div>
                 <nav>
                     <ul className='navbar nav'>

@@ -7,7 +7,7 @@
 :root {
   --primary-color: #E6E6FA;
   --complementary-color: #383f51;
-  --secondary-color: #dbd9a8;
+  --secondary-color: #eae8be;
   --darker-primary: #937193;
   --darker-complementary: #bbb986;
   --font-family: Arial, sans-serif;
@@ -166,4 +166,51 @@ footer p {
   font-size: 1rem;
   border: var(--darker-complementary) 3px solid;
   border-radius: 30px;
+}
+
+/*///////////////////////////////// SHOW PAGE STYLES /////////////////////////////*/
+.show-page {
+  padding: 2rem;
+  max-width: 90vw;
+  max-height: 75vh;
+  margin: 0 auto;
+  background-color: #fbfbff;
+  border-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+
+}
+
+.show-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.show-image {
+  display: block;
+  max-width: 25vw;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto 1rem auto;
+}
+
+.show-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.show-genres {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.show-seasons {
+  font-size: 1rem;
+  color: #333;
 }
