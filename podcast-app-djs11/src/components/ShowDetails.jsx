@@ -80,7 +80,7 @@ export default function ShowDetails() {
               <NavLink
                 style={{ textDecoration: 'none', color: '#8e8a61', cursor: 'pointer', fontWeight: 'bold' }}
                 to={`/show/${show.id}`}
-              >
+              > 
                 <p>Seasons: {show.seasons}</p> {/* link to go to show page and displays the number of seasons for the show */}
               </NavLink>
               <p className='show-deets'><span className='fw-bold'>Last updated:</span> {showDate(show.updated)}</p>

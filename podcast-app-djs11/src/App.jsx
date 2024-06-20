@@ -17,7 +17,6 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/show/:id' element={<ShowPage />} />
-                
                  {/*path to different shows. write /show/ then id is the id of the show*/}
             </Routes>
             </main>

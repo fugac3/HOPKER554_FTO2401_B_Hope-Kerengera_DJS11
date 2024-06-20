@@ -10,6 +10,7 @@
   --secondary-color: #eae8be;
   --darker-primary: #937193;
   --darker-complementary: #bbb986;
+  --darker-darker-complementary: #8E8A61;
   --font-family: Arial, sans-serif;
 }
 
@@ -253,7 +254,85 @@ footer p {
   margin: 0 auto;
 }
 
+.season-info {
+  padding-left: 15px;
+}
+
 .season-episodes {
   font-size: 0.8rem;
   color: #333;
 }
+
+
+.episodes-list {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.episode-item {
+  margin-bottom: 1rem;
+}
+
+.episode-item a {
+  text-decoration: none;
+  color: var(--darker-darker-complementary);
+  font-weight: bold;
+}
+
+.episode-item a:hover {
+  text-decoration: underline;
+}
+
+.episode-item p {
+  margin: 0.5rem 0;
+  font-size: small;
+}
+
+audio {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 40px;
+}
+
+/* ///////////////////////////////// SEASON PAGE STYLES /////////////////////////////
+.season-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.season-page-heading {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.season-page-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto 1rem auto;
+}
+
+.episodes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.episode {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+} */
