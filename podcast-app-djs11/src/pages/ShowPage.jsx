@@ -5,6 +5,7 @@ export default function ShowPage() {
   const { id } = useParams(); // get the show ID from the URL
   const [show, setShow] = useState(null);
   const [openSeasons, setOpenSeasons] = useState({}); // state to track open/close state of seasons
+  const [favourites, setFavourites] = useState(JSON.parse(localStorage.getItem('favourites')) || []);
 
   useEffect(() => {
     fetch(`https://podcast-api.netlify.app/id/${id}`) // fetches specific show data from the api based on the id entered in the route
@@ -28,6 +29,24 @@ export default function ShowPage() {
       [seasonId]: !prevState[seasonId] //
     }));
   };
+
+  const addFavourite = (episode) => { // function to add episode to favourites
+    const newFavourite = { // create a new favourite object with episode data
+        ...episode,
+        showTitle: show.title,
+        season: episode.season,
+        addedAt: new Date().toISOString(),
+    };
+    const newFavourites = [...favourites, newFavourite]; // add the new episode to the favourites array
+    setFavourites(newFavourites); 
+    localStorage.setItem('favourites', JSON.stringify(newFavourites)); // update the local storage with the new favourites
+};
+
+const removeFavourite = (episode) => { // function to remove episode from favourites
+    const newFavourites = favourites.filter(fav => fav.id !== episode.id);
+    setFavourites(newFavourites);
+    localStorage.setItem('favourites', JSON.stringify(newFavourites));
+};
 
   return (
     <div className="show-page-wrapper"> {/* show info card */}
@@ -71,6 +90,8 @@ export default function ShowPage() {
                       <source src={episode.file} type="audio/mp3" /> {/* audio for each episode */}
                       Your browser does not support the audio element.
                     </audio>
+                    <button className='add-favourite' onClick={() => addFavourite({ ...episode, season: season.season })}>Add to Favourites</button>
+                    <button className='remove-favourite' onClick={() => removeFavourite(episode)}>Remove from Favourites</button>
                   </li>
                 ))}
               </ul>

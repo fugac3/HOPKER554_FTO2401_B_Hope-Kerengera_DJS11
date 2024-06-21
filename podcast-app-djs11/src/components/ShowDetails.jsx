@@ -77,7 +77,7 @@ export default function ShowDetails() {
         <div className="banner-overlay"></div>
       </div>
 
-      {/* SORT FUNCTION */}
+      {/* SORTING */}
       <div className="sort-options">
         <label className='sort-label'>Sort by:</label>
           <select className="sort-order" value={sortOrder} onChange={(e) => setSortOrder(e.target.value)}> {/* set the sort order on change*/}
