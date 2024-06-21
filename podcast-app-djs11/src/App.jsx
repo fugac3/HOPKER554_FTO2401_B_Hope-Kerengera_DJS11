@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ShowPage from './pages/ShowPage';
 import GenresPage from './pages/GenresPage';
 import FavouritesPage from './pages/FavouritesPage';
+// import AudioPlayer from './components/AudioPlayer';
 
 
 
@@ -24,6 +25,7 @@ export default function App() {
                 <Route path='/favourites' element={<FavouritesPage />} />
             </Routes>
             </main>
+            {/* <AudioPlayer /> */}
             <Footer />
         </BrowserRouter>
     )

@@ -447,3 +447,147 @@ audio {
   background-color: rgb(254, 169, 169);
   color: var(--complementary-color);
 }
+
+/*///////////////////////////////// MEDIA QUERIES /////////////////////////////*/
+
+/* Small devices */
+@media (max-width: 600px) {
+  .header-left {
+    flex-direction: column;
+  }
+
+  .app-name {
+    font-size: 18px;
+  }
+
+  .nav li {
+    margin-left: 10px;
+  }
+
+  .nav li a {
+    font-size: 14px;
+  }
+
+  .show-item {
+    width: calc(100% - 1rem);
+  }
+
+  .show-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-image {
+    max-width: 80%;
+  }
+
+  .season-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .season-image {
+    max-width: 50%;
+  }
+
+  .episode-item p {
+    font-size: 0.8rem;
+  }
+
+  .favourite-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Medium devices  */
+@media (max-width: 768px) {
+  .app-name {
+    font-size: 20px;
+  }
+
+  .nav li {
+    margin-left: 15px;
+  }
+
+  .nav li a {
+    font-size: 16px;
+  }
+
+  .show-item {
+    width: calc(50% - 1rem);
+  }
+
+  .show-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-image {
+    max-width: 60%;
+  }
+
+  .season-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .season-image {
+    max-width: 40%;
+  }
+
+  .episode-item p {
+    font-size: 0.9rem;
+  }
+
+  .favourite-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Large devices */
+@media (max-width: 992px) {
+  .app-name {
+    font-size: 22px;
+  }
+
+  .nav li {
+    margin-left: 18px;
+  }
+
+  .nav li a {
+    font-size: 17px;
+  }
+
+  .show-item {
+    width: calc(50% - 1rem);
+  }
+
+  .show-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-image {
+    max-width: 50%;
+  }
+
+  .season-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .season-image {
+    max-width: 30%;
+  }
+
+  .episode-item p {
+    font-size: 1rem;
+  }
+
+  .favourite-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
